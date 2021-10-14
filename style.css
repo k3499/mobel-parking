@@ -47,6 +47,7 @@
     background: linear-gradient(360deg, rgba(0, 45, 102, 0) 0%, #002D66 100%), url(images/header-bg.jpg) no-repeat center;
     background-size: cover;
     box-sizing: border-box;
+    height: 100%;
 }
 .header{
     height: 145px;
@@ -121,9 +122,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 144px;
-    line-height: 166px;
+    line-height: 96px;
     color: #FFFFFF;
-    margin: 165px 0 0 0;
+    margin: 119px 0 0 0;
 }
 .info-head__plus-container{
     margin: 0;
@@ -148,9 +149,7 @@
     color: #FFFFFF;
     padding: 12px 0 0 125px;
 }
-.info-head__container{
-    height:100%;
-}
+
 .info-head__plus-item_park{
     background: url(images/parking.png) no-repeat;
 }
@@ -166,8 +165,9 @@
 /* offer-container */
 .offer{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
+    overflow-y: hidden;
 }
 .offer__container{
     padding: 115px 0 0 0;
@@ -191,6 +191,7 @@
     max-width: 47%;
     top: 0;
     right: -200px;
+    z-index: -1;
 }
 .offer__container-block{
     max-width: 855px;
@@ -201,8 +202,6 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: #000000;
 }
@@ -221,7 +220,7 @@
     font-size: 30px;
     line-height: 35px;
     color: #000000;
-    margin-top: 80;
+    margin-top: 80px;
 }
 .offer__do-container{
     padding: 0;
@@ -235,7 +234,7 @@
     width: 10%;
 }
 .offer__do-block{
-    max-width: 17.5%;
+    width: 17.5%;
     text-align: center;
 }
 .offer__do-title{
@@ -255,12 +254,12 @@
 .offer__dashes {
     position: absolute;
     top: 385px;
-    left: 0px;
+    left: -8px;
 }
 .offer__dashes-b {
     position: absolute;
     top: 569px;
-    left: 0px;
+    left: -8px;
 }
 .offer__do-quote{
     padding: 9px 0 0 20px;
@@ -286,9 +285,10 @@
     left: 567px;
 }
  /* Вертикальные */
- @media (max-height: 850px) {
-    .info-head {
+ @media (max-height: 700px) {
+    .info-head, .info-head__container{
       min-height: 100vh;
+      height: 100%;
     }
     .info-head__container {
         padding: 30px 0 0 0;
@@ -330,6 +330,13 @@
     .header__tel-item_tel {
         font-size: 27px;
     }
+    /*offer*/
+    .offer__dashes, .offer__dashes-b{
+        display: none;
+    }
+    .offer__container {
+        padding: 115px 30px 0;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1229px) {
@@ -357,6 +364,31 @@
     }
     .header__tel-item_tel {
         font-size: 27px;
+    }
+    /*offer*/
+    .offer__dashes, .offer__dashes-b, .offer__dottes{
+        display: none;
+    }
+    .offer__container {
+        padding: 53vw 30px 0;
+    }
+    .offer__bgImg {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .offer__container-block {
+        max-width: 100%;
+    }
+    .offer__title {
+        font-size: 29px;
+        line-height: 43px;
+    }
+    .offer__subtitle {
+        font-family: AvantGardeGothicC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 35px;
     }
 }
 @media screen and (max-width: 995px) {
@@ -403,6 +435,52 @@
     }
     .header__tel-item_tel {
         font-size: 27px;
+    }
+    /*offer*/
+    .offer__bgImg {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .offer__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .offer__do-block{
+        width: 100%;
+        text-align: center;
+    }
+    .offer__dashes, .offer__dashes-b, .offer__dottes{
+        display: none;
+    }
+    .offer__container {
+        padding: 53vw 30px 90px;
+    }
+    .offer__do-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .offer__arrow {
+        height: 81px;
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .offer__subtitle {
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 29px
+    }
+    .offer__do-title {
+        font-size: 22px;
+    }
+    .offer__do-container-subline {
+        font-size: 16px;
+    }
+    .offer__arrow {
+        width: 20%;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
