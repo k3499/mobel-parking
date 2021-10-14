@@ -167,6 +167,7 @@
 .offer{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 .offer__container{
     padding: 115px 0 0 0;
@@ -187,17 +188,102 @@
 }
 .offer__bgImg{
     position: absolute;
-    max-width: 765px;
+    max-width: 47%;
     top: 0;
     right: -200px;
 }
+.offer__container-block{
+    max-width: 855px;
+}
+.offer__do-container-subline{
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
 .offer__title{
-    font-family: 'Montserrat';
+    font-family: AvantGardeGothicC;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
     color: #002D66;  
+}
+.offer__subtitle{
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 80;
+}
+.offer__do-container{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offer__arrow{
+    background: url(images/arrow.png) no-repeat center;
+    width: 10%;
+}
+.offer__do-block{
+    max-width: 17.5%;
+    text-align: center;
+}
+.offer__do-title{
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000; 
+}
+.offer__dottes {
+    position: absolute;
+    top: -12px;
+    left: 285px;
+    z-index: -1;
+}
+.offer__dashes {
+    position: absolute;
+    top: 385px;
+    left: 0px;
+}
+.offer__dashes-b {
+    position: absolute;
+    top: 569px;
+    left: 0px;
+}
+.offer__do-quote{
+    padding: 9px 0 0 20px;
+    box-sizing: border-box;
+    max-width: 448px;
+    height: 58px;
+    border-left: 3px solid #002D66;
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #002D66;
+    position: relative;
+}
+.offer__zigzag{
+    position: absolute;
+    top: 24px;
+    left: 580px;
+}
+.offer__zigzag-n{
+    top: 62px;
+    left: 567px;
 }
  /* Вертикальные */
  @media (max-height: 850px) {
@@ -347,4 +433,6 @@
     .info-head__plus-item {
         height: 55px;
     }
+
+
 }
