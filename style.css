@@ -162,7 +162,7 @@
 .info-head__plus-item_light{
     background: url(images/light.png) no-repeat;
 }
-/* offer-container */
+/* offer */
 .offer{
     width: 100%;
     min-height: 100vh;
@@ -283,6 +283,79 @@
 .offer__zigzag-n{
     top: 62px;
     left: 567px;
+}
+    /*worktime*/
+.worktime{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+.worktime__container{
+    padding: 115px 0 90px 0;
+    max-width: 1425px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.worktime__title{
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #002D66;
+    margin: 0;
+}
+.worktime__image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 80px;
+}
+.worktime__image{
+    width: 33.3%;
+    max-width: 454px;
+}
+.worktime__time-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    align-items: center;
+}
+.worktime__clock {
+    width: 194px;
+    height: 123px;
+}
+.worktime__time-name{
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    color: #002D66;
+    margin: 0;
+}
+.worktime__time-from, .worktime__time-until{
+    font-family: AvantGardeGothicC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+    margin: 0;
+}
+.worktime__time-until{
+    margin-top: 16px;
+}
+.worktime__time-item{
+    margin-right: 50px;
+}
+.worktime__time-from{
+    margin-top: 27px;
 }
  /* Вертикальные */
  @media (max-height: 700px) {
