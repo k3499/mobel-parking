@@ -613,6 +613,12 @@
         font-size: 20px;
         line-height: 35px;
     }
+    .worktime__image{
+        display: none;
+    }
+    .worktime__image:first-child{
+        display: block;
+    }
     .worktime__container {
         padding: 0px 15px 0 15px;
     }
