@@ -468,6 +468,13 @@
     .info-head__container {
         padding: 30px 40px 0 40px;
     }
+    .pay__container{
+        padding: 60px 40px 0 40px;
+    }
+    #ymaps1636454413442497628{
+        width: 700px;
+        height: 380px;
+    }
     .worktime__container {
         padding: 90px 40px 0 40px;
     }
@@ -506,7 +513,7 @@
     .info-head__container {
         padding: 30px 40px 0 40px;
     }
-    .worktime__container {
+    .worktime__container, .pay__container {
         padding: 90px 40px 0 40px;
     }
     .info-head__title {
@@ -524,8 +531,15 @@
     .header__tel-item_tel {
         font-size: 27px;
     }
-    .worktime__title{
+    .worktime__title, .pay__title, .pay__map-title{
         font-size: 29px;
+    }
+    .pay__subtitle, .pay__map-item strong {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .pay__text, .pay__map-item{
+        font-size: 20px;
     }
     .worktime__time-name, .worktime__time-name-vs{
         font-size: 25px;
@@ -536,6 +550,7 @@
     .worktime__time-from, .worktime__time-until {
         margin-top: 6px;
     }
+
     /*offer*/
     .offer__dashes, .offer__dashes-b, .offer__dottes{
         display: none;
@@ -694,6 +709,28 @@
     }
     .worktime__mobtime-item {
         margin-right: 0;
+    }
+    /* pay */
+    .pay__map-container{
+        flex-direction: column-reverse;
+    }
+    .pay__container {
+        padding: 50px 15px 0 15px;
+        line-height: 35px;
+    }
+    .pay__title, .pay__map-title {
+        font-size: 26px;
+    }
+    .pay__subtitle, .pay__text , .pay__map-item, .pay__map-item strong {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .pay__map-item{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .pay__map-description{
+        margin: 0 0 15px 0;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
