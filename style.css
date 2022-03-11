@@ -247,6 +247,16 @@
     top: 569px;
     left: -8px;
 }
+.pay__dashes {
+    position: absolute;
+    top: 26px;
+    right: -8px;
+}
+.pay__dashes-b {
+    position: absolute;
+    top: 210px;
+    right: -8px;
+}
 .offer__do-quote{
     padding: 9px 0 0 20px;
     box-sizing: border-box;
